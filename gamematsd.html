@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Tebak-Tebakan Biologi SMP</title>
+    <title>Game Tebak-Tebakan Math SMP</title>
     <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQA_9bRyFznTI2j3sSRLGVDZi-xr-DfFCDPsBrouWcJXfAnc6Uz7Jf7EF26Qbmo-Eb92U&usqp=CAU" type="image/x-icon">
     <style>
         body {
@@ -53,7 +53,7 @@
     </style>
 </head>
 <body>
-    <h1>Game Tebak-Tebakan math sekolah dasar</h1>
+    <h1>Game Tebak-Tebakan Math SMP</h1>
     <div class="container">
         <p id="timer">Waktu tersisa: 6:00</p>
         <p id="question"></p>
@@ -85,11 +85,13 @@
         let rankings = []; // Simpan peringkat pengguna
 
         const questions = [
-            { question: "Jika sebuah kue dibagi menjadi 6 bagian yang sama besar dan 3 bagian sudah dimakan, berapa bagian kue yang tersisa?", options: ["2 bagian", "3 bagian", "4 bagian", "5 bagian"], answer: "2 bagian", },
-            { question: "Jika ayah membeli 5 apel dan ibu membeli 3 apel lagi, berapa jumlah total apel yang mereka beli?", options: ["7", "8", "8", "9","10"], answer: "9" },
-            { question: " Pak Johan mempunyai 48 telur ayam. Dia ingin membagi telur-telur itu ke dalam keranjang. Jika setiap keranjang berisi 6 telur, berapa banyak keranjang yang diperlukan Pak Johan?", options: ["2 keranjang", "4 keranjang", "5 keranjang", "8 keranjang"], answer: "8 keranjang" },
-            { question: "Jika sebuah ruangan berukuran 10 meter panjangnya, 5 meter lebarnya, dan 3 meter tingginya, berapa volume ruangan tersebut?", options: ["150 m^3", "200 m^3", " 250 m^3", " 300 m^3"], answer: " 250 m^3" },
-            { question: "Apa nama protein yang membawa oksigen dalam darah?", options:  ["Hemoglobin", "Insulin", "Keratin", "Kolagen"], answer: "Hemoglobin" }
+        { question: "223+23=", options: ["113", "290","246", "300"], answer: "246" },
+        { question: "Sebuah segitiga memiliki panjang sisi 6 cm, 8 cm, dan 10 cm. Jenis segitiga tersebut adalah...", options: ["Siku-siku", " Sama sisi", " Sama kaki", "Sembarang"], answer: "siku-siku" },
+        { question: "Hasil dari 5² + 3 x 2 adalah", options: ["25", "16", "13", "11"], answer: "16" },
+        { question: "Jika 3x + 5 = 20, maka nilai x adalah", options: ["5", "6", "7", "8"], answer: "6" },
+        { question: "Sebuah persegi memiliki panjang sisi 8 cm. Luasnya adalah.", options: ["32 cm²", "64 cm²", "16 cm²", "24 cm²"], answer: "64 cm²" }
+
+
             ];
     
             function displayQuestion() {
@@ -191,6 +193,5 @@
             displayQuestion();
             timerInterval = setInterval(countdown, 1000);
         </script>
-         </body>
+    </body>
     </html>
-    
