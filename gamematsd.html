@@ -62,7 +62,7 @@
     </div>
     <p id="result"></p>
     <div id="answers"></div>
-    <p id="nextLevel"><a href="#" onclick="nextLevel()">Lanjutkan</a></p>
+    <p id="nextLevel"><a href="nextlevel math sd.html" onclick="nextLevel()">Lanjutkan</a></p>
     <div id="ranking">
         <h2>Peringkat:</h2>
         <ol id="rankList"></ol>
@@ -86,9 +86,9 @@
 
         const questions = [
         { question: "223+23=", options: ["113", "290","246", "300"], answer: "246" },
-        { question: "Sebuah segitiga memiliki panjang sisi 6 cm, 8 cm, dan 10 cm. Jenis segitiga tersebut adalah...", options: ["Siku-siku", " Sama sisi", " Sama kaki", "Sembarang"], answer: "siku-siku" },
-        { question: "Hasil dari 5² + 3 x 2 adalah", options: ["25", "16", "13", "11"], answer: "16" },
-        { question: "Jika 3x + 5 = 20, maka nilai x adalah", options: ["5", "6", "7", "8"], answer: "6" },
+        { question: "12x12", options: ["12", "200", "144", "142"], answer: "144" },
+        { question: "Rumus persegi adalah?", options: ["sxs", "pxl", "lxaxt", "2x2"], answer: "sxs" },
+        { question: "555-45", options: ["510", "15", "30", "149"], answer: "510" },
         { question: "Sebuah persegi memiliki panjang sisi 8 cm. Luasnya adalah.", options: ["32 cm²", "64 cm²", "16 cm²", "24 cm²"], answer: "64 cm²" }
 
 
@@ -124,7 +124,7 @@
                     score += 10;
                     resultElement.textContent = "Jawaban Benar! Skor Anda: " + score;
                 } else {
-                    score += 5;
+                    score += 1;
                     resultElement.textContent = "Jawaban Salah. Skor Anda: " + score;
                     wrongAnswers.push({ question: questions[currentQuestionIndex].question, correctAnswer });
                 }
